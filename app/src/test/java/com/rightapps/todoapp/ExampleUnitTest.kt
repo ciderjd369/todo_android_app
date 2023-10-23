@@ -10,7 +10,7 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
-    fun addTwoNumber(x: Long, y: Long): Long {
+    fun addNumbers(x: Long, y: Long): Long {
 
         val result = x + y
         println("x=$x, y=$y, Sum=$result")
@@ -19,13 +19,13 @@ class ExampleUnitTest {
 
     @Test
     fun addition_isCorrect() {
-        assertEquals(14, addTwoNumber(9, 5))
+        assertEquals(14, addNumbers(9, 5))
 
     }
 
     @Test
     fun addition_isIncorrect() {
-        assertNotEquals(4, addTwoNumber(9, 5))
+        assertNotEquals(4, addNumbers(9, 5))
 
     }
 }
